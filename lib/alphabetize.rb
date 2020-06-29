@@ -1,3 +1,4 @@
 def alphabetize(arr)
-  arr.sort_by{|string| string.tr(esp_alph, ascii)}
+  ESPERANTO_ALPHABET = "abcĉdefgĝhĥijĵklmnoprsŝtuŭvz"
+  arr.sort_by{|string| string.tr(ESPERANTO_ALPHABET, ascii)}
 end
